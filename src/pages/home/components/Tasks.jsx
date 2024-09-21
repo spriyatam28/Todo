@@ -1,10 +1,20 @@
 import '../../../styles/Tasks.css';
+import {useState} from "react";
+import Task from "./Task.jsx";
 
 function Tasks() {
+    const [showTask, setShowTask] = useState(false);
+
+    function createTask() {
+        setShowTask(true);
+    }
+
     return (
         <div id="tasks">
             <div>
-                <button>No Tasks</button>
+                {
+                    showTask ? <Task/> : <button onClick={createTask}>No Tasks</button>
+                }
             </div>
         </div>
     );
