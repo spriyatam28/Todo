@@ -18,7 +18,7 @@ select {
     color: black;
     background-color: #CCCDDE;
     font-size: 16px;
-    padding: 12px 24px 12px 0;
+    padding: 12px 24px 12px 12px;
     text-align: left;
     border: none;
     border-radius: 8px;

@@ -1,0 +1,11 @@
+#tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e7ef;
+    margin: 12px auto 0;
+    border-radius: 12px;
+    width: 50%;
+    height: auto;
+    min-height: 256px;
+}
