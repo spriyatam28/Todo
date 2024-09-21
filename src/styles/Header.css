@@ -1,6 +1,10 @@
 #header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#tasks-header {
+    display: flex;
     justify-content: space-around;
 }
 
@@ -14,7 +18,14 @@ button {
     cursor: pointer;
 }
 
-select {
+#no-tasks {
+    background-color: #646681;
+    color: white;
+    padding: 2px 16px;
+    border-radius: 12px;
+}
+
+#sort {
     color: black;
     background-color: #CCCDDE;
     font-size: 16px;
@@ -23,4 +34,11 @@ select {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.task-name {
+    background-color: white;
+    margin: 8px;
+    border-radius: 8px;
+    width: 100%;
 }

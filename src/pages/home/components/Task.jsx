@@ -1,17 +1,9 @@
 import '../../../styles/Task.css';
 
-function Task() {
-    function addTask() {
-
-    }
-
-    function cancelAddTask() {
-
-    }
-
+function Task(props) {
     return (
-        <div>
-            <span>&times;</span>
+        <div id="task-modal">
+            <button id="close-btn" onClick={props.cancelTask}>&times;</button>
             <h3>Task Details:</h3>
             <form action="">
                 <label htmlFor="task">Task</label>
@@ -29,9 +21,9 @@ function Task() {
                     <option value="completed">Completed</option>
                 </select>
             </form>
-            <div>
-                <button onClick={addTask}>Add Task</button>
-                <button onClick={cancelAddTask} id="cancel-task">Cancel</button>
+            <div id="add-cancel-btn">
+                <button onClick={props.addTask}>Add Task</button>
+                <button id="cancel-task" onClick={props.cancelTask}>Cancel</button>
             </div>
         </div>
     );
