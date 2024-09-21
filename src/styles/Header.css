@@ -1,0 +1,25 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    color: white;
+    background-color: #3c49e6;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+select {
+    color: black;
+    background-color: #CCCDDE;
+    font-size: 16px;
+    padding: 12px 24px 12px 0;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
