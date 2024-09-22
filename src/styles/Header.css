@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
 #tasks-header {
     display: flex;
     justify-content: space-around;
@@ -34,6 +35,23 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+#task {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+}
+
+.task-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.task-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
 }
 
 .task-name {

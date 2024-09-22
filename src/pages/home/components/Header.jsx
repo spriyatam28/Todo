@@ -1,6 +1,8 @@
 import '../../../styles/Header.css';
 import Task from "./Task.jsx";
 import {useState} from "react";
+import TaskItem from "./TaskItem.jsx";
+import Calendar from "react-calendar";
 
 function Header() {
     const [showCreateTask, setShowCreateTask] = useState(false);
@@ -54,12 +56,16 @@ function Header() {
                         />
                         : tasks.length > 0 ? (
                                 <div id="task">
-                                    {tasks.map((task, idx) => (
-                                        <div key={idx} className="task-name">
-                                            <p className="task-title">{task.title}</p>
-                                            <p className="task-description">{task.description}</p>
-                                        </div>
-                                    ))}
+                                    <ol>
+                                        {tasks.map((task, idx) => (
+                                            <TaskItem
+                                                key={idx}
+                                                title={task.title}
+                                                description={task.description}
+                                                createdOn={Date()}
+                                            />
+                                        ))}
+                                    </ol>
                                 </div>
                             ) :
                             (
